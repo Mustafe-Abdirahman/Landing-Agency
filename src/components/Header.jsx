@@ -34,6 +34,9 @@ const Header = () => {
               <Link to="/" className="text-sm/6 font-semibold text-gray-900">
                 <li>Home</li>
               </Link>
+              <Link to={`/`} className="text-sm/6 font-semibold text-gray-900">
+                <li>Service</li>
+              </Link>
               <Link
                 to="/about"
                 className="text-sm/6 font-semibold text-gray-900"

@@ -1,4 +1,5 @@
 import About from "./About";
+import Service from "./services";
 
 export default function Home() {
   return (
@@ -28,11 +29,12 @@ export default function Home() {
           </div>
           <div className="text-center">
             <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-              Data to enrich your online business
+              Boost your brand, fuel your growth!
             </h1>
             <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
+              "Stunning graphics, engaging videos, custom websites, and digital
+              marketing—tools to captivate your audience and drive real results
+              for your business."
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -60,7 +62,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <About />
+      <Service />
     </div>
   );
 }
