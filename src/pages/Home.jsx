@@ -1,4 +1,5 @@
 import About from "./About";
+import Price from "./Price";
 import Service from "./services";
 
 export default function Home() {
@@ -63,6 +64,7 @@ export default function Home() {
         </div>
       </div>
       <Service />
+      <Price />
     </div>
   );
 }
