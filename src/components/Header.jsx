@@ -1,10 +1,17 @@
 import React, { useState } from "react";
-import { Dialog, DialogPanel } from "@headlessui/react";
+import { Button, Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import logo from "../assets/a.png";
 
 const Header = () => {
+  const handleClick = (id) => {
+    console.log("clicked");
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <div className="bg-white">
@@ -34,9 +41,14 @@ const Header = () => {
               <Link to="/" className="text-sm/6 font-semibold text-gray-900">
                 <li>Home</li>
               </Link>
-              <Link to={`/`} className="text-sm/6 font-semibold text-gray-900">
+              <Button
+                onClick={() => handleClick("services")}
+                id="services"
+                to={`/`}
+                className="text-sm/6 font-semibold text-gray-900"
+              >
                 <li>Service</li>
-              </Link>
+              </Button>
               <Link
                 to="/about"
                 className="text-sm/6 font-semibold text-gray-900"

@@ -1,14 +1,4 @@
-import { ArrowTrendingUpIcon } from "@heroicons/react/16/solid";
-import { ArrowTurnRightUpIcon } from "@heroicons/react/24/outline";
-import {
-  ArrowRightEndOnRectangleIcon,
-  ArrowTurnRightDownIcon,
-} from "@heroicons/react/24/outline";
-import {
-  ArrowPathIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
-} from "@heroicons/react/24/outline";
+import { ArrowPathIcon } from "@heroicons/react/24/outline";
 import { SlLayers, SlRocket, SlScreenDesktop } from "react-icons/sl";
 const features = [
   {
